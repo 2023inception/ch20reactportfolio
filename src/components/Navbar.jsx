@@ -5,21 +5,21 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="about" className="navbar-title">
+        <Link to="/" className="navbar-title">
           <h1 className="cursor-pointer">My Portfolio</h1>
         </Link>
 
         <div className="link-container">
-          <a href="/about" className="navbar-link">
+          <NavLink to="/about" className="navbar-link" activeClassName="active">
             About Me
-          </a>
+          </NavLink>
 
-          <a href="/projects" className="navbar-link">
+          <Link to="/projects" className="navbar-link">
             Projects
-          </a>
-          <a href="/contact" className="navbar-link">
+            </Link>
+            <Link to="/contact" className="navbar-link">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
